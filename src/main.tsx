@@ -5,6 +5,8 @@ import './styles/globals.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <div className="flex justify-center p-4 min-h-screen border-4 border-indigo-500">
+      <App />
+    </div>
   </StrictMode>
 );
