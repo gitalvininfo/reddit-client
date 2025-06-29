@@ -1,4 +1,10 @@
+import { useSubredditData } from './hooks/useSubredditData';
+
 function App() {
+  const { data } = useSubredditData('angular');
+
+  console.log({ data });
+
   return (
     <div className="min-w-7xl border-4 border-red-500">
       <div className="grid grid-cols-3 gap-4 h-full">
