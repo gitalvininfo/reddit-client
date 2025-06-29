@@ -16,7 +16,7 @@ function SubredditLane({ subreddit }: Props) {
   return (
     <Accordion type="single" collapsible>
       {data?.data.children.map(({ data }) => (
-        <AccordionItem value={data.id}>
+        <AccordionItem key={data.id} value={data.id}>
           <AccordionTrigger>
             <div className="flex">
               <span className="font-bold me-5">{data.ups}</span> {data.title}
