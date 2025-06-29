@@ -3,7 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 
 export const useSubredditData = (subreddit: string) => {
   return useQuery({
-    queryKey: ['teams'],
+    queryKey: ['subreddit', subreddit],
     queryFn: () => fetchSubreddit(subreddit),
   });
 };
